@@ -1,0 +1,200 @@
+HTML {
+    font-size: 16px;
+    line-height: 1.5;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+BODY {
+    min-height: 300vh;
+}
+
+IMG {
+    max-width: 100%;
+}
+
+UL {
+    list-style: none;
+}
+
+A {
+    text-decoration: none;
+}
+
+MAIN {
+    font-size: 2em;
+}
+
+
+/*.screen {
+    max-width: 500px;
+    min-height: 800px;
+    border: 3px solid #4a4e54;
+    border-radius: .13em;
+    margin: .2em auto 0;
+    background: #000;
+    background-clip: content-box;
+  }*/
+
+.floating-btn {
+    background: #181717;
+}
+
+.floating-container {
+    position: fixed;
+    left: 1em;
+    bottom: 1em;
+    padding: 2.6em;
+    //overflow: hidden;
+    //background: white;
+}
+
+
+/*.floating-container.is--open {
+    top: 0; right: 0; bottom: 0; left: 0;
+  }*/
+
+
+/*.floating-container.is--open .floating-btn {
+    position: relative;
+    z-index: 100;
+  }*/
+
+.navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    //background: rgba(67, 163, 141, .1);
+}
+
+.floating-btn~.navigation {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    z-index: 50;
+    transition: opacity 0.1s 0.3s;
+}
+
+.floating-btn.is--off~.navigation {
+    /*   display: none; */
+    visibility: hidden;
+    opacity: 0;
+}
+
+.menu {
+    padding: 0;
+    text-align: center;
+}
+
+.menu__item {
+    color: #fff;
+    font-size: 3.5em;
+}
+
+.menu__item A {
+    display: block;
+    color: inherit;
+}
+
+.menu__item:hover {
+    box-shadow: 0 2px 3px rgba(37, 144, 119, .8) inset, 0 -2px 3px rgba(37, 144, 119, .8) inset;
+}
+
+.menu__item:hover A {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, .4);
+}
+
+.sub-screen {
+    position: fixed;
+    left: 2.5em;
+    bottom: 2.5em;
+    padding: 1em;
+    background-color: rgba(78, 198, 170, .9);
+    /* //background-image: url(http://imgh.us/chihuahua-1920.jpg); */
+    background-size: cover;
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0;
+    text-align: center;
+    transform: scale(1);
+    //transform-origin: 25% 75%;
+    transition: transform .4s, opacity .01s .2s;
+}
+
+.is--expanded {
+    transform: scale(200);
+    z-index: 50;
+    opacity: 1;
+    transition: transform .9s, opacity .05s;
+}
+
+.floating-btn {
+    position: fixed;
+    left: 1em;
+    bottom: 1em;
+    padding: 3.2em 2em;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 60;
+    outline: none;
+}
+
+.floating-btn.is--off .menu-icon {
+    background: #000;
+}
+
+.menu-icon {
+    display: block;
+    width: 3em;
+    height: .3em;
+    background: transparent;
+}
+
+.menu-icon:before,
+.menu-icon:after {
+    content: "";
+    position: absolute;
+    left: 2em;
+    display: block;
+    width: 3em;
+    height: .3em;
+    background: #fff;
+    transition: transform .2s;
+}
+
+.floating-btn.is--off .menu-icon:before,
+.floating-btn.is--off .menu-icon:after {
+    transform: rotate(0);
+    background: inherit;
+}
+
+.floating-btn.is--off .menu-icon:before {
+    top: 2.3em;
+}
+
+.floating-btn.is--off .menu-icon:after {
+    bottom: 2.3em;
+}
+
+.menu-icon:before {
+    top: 3.2em;
+    transform: rotate(45deg);
+}
+
+.menu-icon:after {
+    bottom: 3.2em;
+    transform: rotate(-45deg);
+}
+
+.is--off {
+    background: rgb(78, 198, 170);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
