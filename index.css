@@ -75,23 +75,42 @@ HTML CSSResult Skip Results Iframe EDIT ON .d1 {
     animation-play-state: paused;
 }
 
+
+
 @keyframes fondu {
     0% {
-        background-image: url("IMG-20210721-WA0010.jpg");
+        background-image: url("hik\ 12.jpg");
     }
-    33.33% {
-        background-image: url("IMG-20210928-WA0030.jpg");
+    16.666% {
+        background-image: url("taf\ sw.jpg");
     }
-    66.67% {
-        background-image: url("IMG-20210928-WA0006.jpg");
+   
+    33.3333% {
+        background-image: url("indexddss.jpg");
+    }
+    49.9993333% {
+        background-image: url("P1030151.jpg");
+    }
+   
+    66.665333% {
+        background-image: url("taf.jpg");
+        
+    }
+    83.3253% {
+        background-image: url("IMG-20210721-WA0010.jpg" );
+      
     }
     100% {
-        background-image: url("IMG-20210910-WA0023.jpg");
+        background-image: url("no.png  ");
+       
     }
-}
 
+  
+  
 Resources1× 0.5× 0.25×Rerun
 }
+
+
 
 /* uncomment to see outlines of stuff when you hover *-/
 :hover {
@@ -577,7 +596,7 @@ h2 {
     font-family: monospace 'Roboto Slab', sans-serif;
     text-align: center;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 8px;
 }
 .TITRE {
     text-align: center;
